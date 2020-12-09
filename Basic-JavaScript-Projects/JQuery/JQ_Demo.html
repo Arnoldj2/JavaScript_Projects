@@ -8,8 +8,8 @@
 
 	<script>
 
-		$(document).ready(function() {
-			$("html").append(
+		$(document).ready(function() {                 //  in Jquery  , when the document is ready , run function
+			$("html").append(                          // grab HTML tag and append the following information
 				"<body>\
 					<div id='container'>\
 						<div id='inner'>\
@@ -21,15 +21,15 @@
 					</div>\
 				</body>"
 			);
-			$("#2").css({"color":"red"});
-			$("#3").click(function() {
-				$('h1').hide();
+			$("#2").css({"color":"red"});       //targets id 2 , effects CSS , red font
+			$("#3").click(function() {			//targets id 3,  on click run function 
+				$('h1').hide();					//  hides <h1>
 
 
 
 			});	
 
-			$( "<button class='alert'>Alert!</button>" ).appendTo( document.body );  //  <----- moved to ( was located on "moved from" , this was dont to achieve functionality)
+			$( "<button class='alert'>Alert!</button>" ).appendTo( document.body );  //  <----- moved to ( was located on "moved from" , this was done to achieve functionality)
 
 			// Sets up click behavior on all button elements with the alert class
     		// that exist in the DOM when the instruction was executed
