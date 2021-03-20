@@ -1,14 +1,17 @@
 
 # JavaScript Projects
 
-Below are several projects I've written with Javascript , HTML, and CSS.
+These are basic projects written with Javascript , HTML, and CSS.
+
+***
 
 ## Projects
 
-- Pizza Menu
-- Tic-Tac-Toe Game
-- Calculator
-
+<ol>
+<li>Pizza Menu</li>
+<li>Tic-Tac-Toe Game</li>
+<li>Calculator</li>
+</ol>
 
 ## Pizza Menu
 
