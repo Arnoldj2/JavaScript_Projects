@@ -1,7 +1,7 @@
 
 # JavaScript Projects
 
-This is a display of sample website that I made using HTML and CSS.
+Below are several projects I've written with Javascript , HTML, and CSS.
 
 ## Projects
 
