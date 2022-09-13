@@ -12,7 +12,8 @@ These are basic projects written with HTML, CSS, and JavaScript.
 <li>Tic-Tac-Toe Game</li>
 <li>Calculator</li>
 <li>Quiz App</li>
-<li>Pexels.com API<li>
+<li>Dynamic Photo Search App<li>
+
 </ol>
 
 ## Pizza Menu
@@ -33,8 +34,8 @@ A basic 4 function calculator. Users can add, subtract, multiply, and divide on 
 
 ## Quiz App
 
-A simple three question quiz app that displays only one question at a time. The user selects their answer via radio buttons 
-and is not allowed to continue on without selecting an options, forward and back buttons are available should the user need to change any of their answers,  and a final score is given when the quiz has ended.
+A simple three question quiz app that displays only one question at a time. The user selects their answer via radio button 
+and is not allowed to continue on without selecting an option, forward and back buttons are available should the user need to change any of their answers,  and a final score is given when the quiz has ended.
 
 ## Dynamic Photo Search App
 
