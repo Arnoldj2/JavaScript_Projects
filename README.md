@@ -12,8 +12,7 @@ These are basic projects written with HTML, CSS, and JavaScript.
 <li>Tic-Tac-Toe Game</li>
 <li>Calculator</li>
 <li>Quiz App</li>
-<li>Dynamic Photo Search App<li>
-
+<li>Dynamic Photo Search App</li>
 </ol>
 
 ## Pizza Menu
