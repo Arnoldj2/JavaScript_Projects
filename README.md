@@ -1,7 +1,7 @@
 
 # JavaScript Projects
 
-These are basic projects written with Javascript , HTML, and CSS.
+These are basic projects written with HTML, CSS, and JavaScript.
 
 ***
 
@@ -11,6 +11,8 @@ These are basic projects written with Javascript , HTML, and CSS.
 <li>Pizza Menu</li>
 <li>Tic-Tac-Toe Game</li>
 <li>Calculator</li>
+<li>Quiz App</li>
+<li>Pexels.com API<li>
 </ol>
 
 ## Pizza Menu
@@ -28,3 +30,14 @@ and flashing lights.
 ## Calculator
 
 A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of a calculator.
+
+## Quiz App
+
+A simple three question quiz app that displays only one question at a time. The user selects their answer via radio buttons 
+and is not allowed to continue on without selecting an options, forward and back buttons are available should the user need to change any of their answers,  and a final score is given when the quiz has ended.
+
+## Dynamic Photo Search App
+
+A dynamic photo search app using Pexels.com API. This allows users to make multiple queries for copyright-free photo's which are then displayed with a masonry layout with flexbox!
+
+

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default HTML</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Arial, sans-serif;
+            
+
+        }
+        .container {
+            width: 80%;
+            height: 50%;
+            border: 1px solid grey; 
+            margin: 0 auto ; 
+        }
+
+        .header {
+                        
+            margin: 10px;
+            font-size: 45px;
+            font-weight: 400;
+            /* border: 1px inset  black; */
+           
+        }
+
+        .questionNumber {
+
+            
+            font-size: 25px;
+            font-weight: 400;          
+            /* border: 1px solid black; */
+        }
+
+        .question {
+
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-size: 20px;
+            font-weight: 400;
+            
+            /* border: 1px solid black; */
+        }
+ 
+
+        .content {
+            padding: 10px;
+           
+        }
+
+
+        .answer1, .answer2, .answer3, .answer4 {
+
+            /* border: 1px solid black; */
+            background-color: #f1f1f1;
+            margin-bottom: 2px;
+            font-size: 20px;
+            padding: 10px;
+          
+        }
+
+
+        .btn {
+
+        background-color: #04AA6D;
+        border: 1px solid #04AA6D ;
+        border-radius: 5px;
+        padding: 10px 25px;
+        color: white;
+        font-size: 15px;
+        margin-top: 15px;
+
+        }
+
+        .btn2 {
+                   
+        background-color: #04AA6D;
+        border: 1px solid #04AA6D ;
+        border-radius: 5px;
+        padding: 10px 10px;
+        color: white;
+        font-size: 15px;
+        margin-top: 15px;
+           
+        }
+
+        .content-body {
+
+            display: none;
+        }
+
+        .show-active {
+            display: block;
+            -webkit-animation: fadeEffect 2s;
+            animation: fadeEffect 3s;
+
+        }
+ 
+
+        @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+
+
+
+    </style>
+    
+</head>
+<body id="main">
+
+    <div class="container">
+
+                <div class="header">
+                    <p>eCommerce Quiz</p>
+                </div>
+
+        <div class="content">
+
+            <div id="zero" class="content-body show-active">
+            
+
+                    <div class="questionNumber">
+                        <p>Question 1 of 3: </p> 
+                    </div>
+                    
+                    <div class="question">
+                        <p>Which of the following is not a real eCommerce platform?</p> 
+                    </div> 
+
+         
+                        <div class="answer1" >
+                            <input type="radio" id="" name="answer1" value="0"  >
+                            <label for="">Shopify</label>
+                        </div>
+                        
+                        <div class="answer1">
+                            <input type="radio" id="" name="answer1" value="0" >
+                            <label for="">WooCommerce</label>
+                        </div>
+                        
+                        <div class="answer1">
+                            <input type="radio" id="" name="answer1" value="1" >
+                            <label for="">ShopCommerce</label>
+                        </div>
+
+                        <div class="answer1">
+                            <input type="radio" id="" name="answer1" value="0" >
+                            <label for="">BigCommerce</label>
+                        </div>
+
+                        <div >
+                            <button id="" class="btn" onclick="advance(1)">Next ></button>                            
+                        </div>
+
+                                                                 
+                 
+
+            </div>
+
+        <div id="one" class="content-body">
+
+                    <div class="questionNumber">
+                        <p>Question 2 of 3: </p> 
+                    </div>
+                    
+                    <div class="question">
+                        <p>If Shopify is so good, why are Shopify developers necessary?</p> 
+                    </div> 
+
+                    <div class = "answers">
+
+                        <div class="answer2" >
+                            <input type="radio" id="" name="answer2" value="0">
+                            <label for="">To save time on things like store setups and migrations</label>
+                        </div>
+                        
+                        <div class="answer2">
+                            <input type="radio" id="" name="answer2" value="0">
+                            <label for="">To extend the limited design options and functionalities of themes with custom code</label>
+                        </div>
+                        
+                        <div class="answer2">
+                            <input type="radio" id="" name="answer2" value="0" >
+                            <label for="">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+                        </div>
+
+                        <div class="answer2">
+                            <input type="radio" id="" name="answer2" value="1" >
+                            <label for="">All the above</label>
+                        </div>
+
+                        <div >
+                            <button id="" class="btn2" onclick="advance(0)">&lt Previous</button>
+                            <button id="" class="btn" onclick="advance(2)">Next &gt</button>
+                        </div>
+
+                    </div>
+
+            </div>
+
+            <div id="two" class="content-body">
+
+                    <div class="questionNumber">
+                        <p>Question 3 of 3: </p> 
+                    </div>
+                    
+                    <div class="question">
+                        <p>Which of the following is true about Shopify developers?</p> 
+                    </div> 
+
+                    <div class = "answers">
+
+                        <div class="answer3" >
+                            <input type="radio" id="" name="answer3" value="0">
+                            <label for="">They are paid extremely well</label>
+                        </div>
+                        
+                        <div class="answer3">
+                            <input type="radio" id="" name="answer3" value="0">
+                            <label for="">There is a high demand for them</label>
+                        </div>
+                        
+                        <div class="answer3">
+                            <input type="radio" id="" name="answer3" value="0" >
+                            <label for="">They need to know web development, the platform itself, and the liquid template language</label>
+                        </div>
+
+                        <div class="answer3">
+                            <input type="radio" id="" name="answer3" value="1" >
+                            <label for="">All the above</label>
+                        </div>
+
+                        <div >
+                            <button id="" class="btn2" onclick="advance(1)">&lt Previous</button>
+                            <button id="" class="btn" onclick="endresult()">Submit</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div id="three" class="content-body">
+
+                <div id="result"></div>
+
+                </div>
+
+        </div>
+
+    </div>
+
+ 
+    
+</body>
+
+<script>
+
+
+
+
+
+function advance (num){
+ 
+    
+    if(num === 0 ) {
+
+        removeShowActive();
+        document.getElementById("zero").classList.add('show-active')     
+
+    }
+    if(num === 1 ) {
+
+        var checked_one = document.querySelector('input[name = "answer1"]:checked');
+        
+        if(checked_one != null){
+
+        removeShowActive();
+        document.getElementById("one").classList.add('show-active')     
+
+        } 
+
+        else {
+
+        alert('Please select one of the available options in order to continue'); 
+
+        }
+    }
+    if(num === 2 ) {
+
+        var checked_two = document.querySelector('input[name = "answer2"]:checked');
+
+        if(checked_two != null){
+
+        removeShowActive();
+        document.getElementById("two").classList.add('show-active')     
+
+        } 
+
+        else {
+
+        alert('Please select one of the available options in order to continue'); 
+
+        }
+
+
+    }
+}
+ 
+
+
+function removeShowActive() {
+
+    var contentBodies = document.getElementsByClassName("content-body");
+
+        for ( contentBody of contentBodies ){
+
+        contentBody.classList.remove('show-active');
+        }
+
+
+}
+
+function endresult() {
+
+
+    var checked_three = document.querySelector('input[name = "answer3"]:checked');
+
+        if(checked_three != null){
+
+            removeShowActive();
+
+            document.getElementById("three").classList.add('show-active')
+
+            document.getElementById("result").innerHTML = "";
+
+                var arr = document.getElementsByTagName('input');
+
+                var counter = 0;
+
+                    for(var i = 0; i < arr.length; i++){
+
+                        if(arr[i].checked) {
+
+                            counter += parseInt(arr[i].value);
+                        }
+
+
+                    }
+
+            document.getElementById("result").innerHTML = "Your score is " + counter + " out of 3";     
+
+        } 
+
+        else {
+
+            alert('Please select one of the available options in order to continue'); 
+
+        }
+
+
+}
+
+
+
+</script>
+
+</html>

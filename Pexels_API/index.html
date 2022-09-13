@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+
+        margin: 0;
+        padding: 0;
+        font-family:'Segoe UI', Arial, sans-serif;        
+
+        }
+
+        #container {
+        
+            margin: 0 auto ;
+        
+        
+        }
+
+        #header {
+                                
+            margin: 20px 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+              
+        }
+
+        #logobox {
+
+            width: 160px;
+            height: 50px;
+        }
+
+        .logo {
+
+            max-width:100%;
+            max-height:100%;
+            object-fit: contain;
+        }
+
+
+        #search-bar {
+
+            width: 600px;
+            height: 50px;
+            border: 1px solid #f7f7f7;
+            border-radius: 5px;
+            background-color: #f7f7f7;  
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 20px;       
+        }
+
+        hr.new1 {
+
+            border-top: 1px solid #f1f1f1;
+        }
+       
+        #theBetween{
+
+            height: 300px;
+            color: #2c343e;
+            font-weight: 600;
+            font-size: 50px;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto ;
+            line-height : 300px;
+            
+        }
+/* 
+        width: 80%;
+        margin: 0 auto ;   */
+
+div#masonry {
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100vw;
+	font-size: 0; 
+}
+div#masonry img { 
+	width: 33.3%;
+	transition: .8s opacity;
+}
+div#masonry:hover img {
+	opacity: 0.3;
+}
+div#masonry:hover img:hover {
+	opacity: 1;
+}
+
+
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <div  id="container">
+
+        <div id="header">
+
+            <div id="logobox">
+
+                <a href="https://www.pexels.com">
+                    <img class="logo" src="https://images.pexels.com/lib/api/pexels.png" />
+                </a>
+
+            </div>
+
+            <div id="search">
+
+                <form id="search-form">
+                    <input id="search-bar" placeholder="Search" type="text">
+                </form>
+
+            </div>
+
+        
+        </div>
+
+        <hr class="new1">
+
+        <div id="theBetween">
+
+
+        </div>
+
+
+        <div id='masonry'>
+
+
+        </div>
+      
+
+    </div>
+
+</body>
+
+
+
+
+<script>
+
+  
+
+  var searchForm = document.querySelector('#search-form');
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();   
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       // console.log(xhttp.responseText);
+       // console.log(typeof xhttp.responseText);
+
+       var res = JSON.parse(xhttp.responseText);
+       // console.log(res);  
+
+       var photoData = res.photos.map(function(item){
+            console.log(item.src);
+            return item.src;
+        });
+
+       
+        var middle = document.getElementById('theBetween');
+        var container = document.querySelector('#masonry');
+                    container.innerHTML = '';
+                    middle.innerHTML = '';
+                    photoData.forEach(function(photo) {
+                       
+                        var photoDiv = document.createElement('img');
+                        // photoDiv.classList.add('masonry-brick')
+                        photoDiv.src = `${photo.medium}`;
+                        container.appendChild(photoDiv);
+                    });
+
+        
+        var search = document.createElement('div');
+        search.innerHTML = `
+            <p> ${textValue} photos </p>
+            
+        `;
+        middle.appendChild(search);            
+
+
+    }
+};
+
+var textValue = document.querySelector('#search-bar').value
+xhttp.open("GET", `https://api.pexels.com/v1/search?query=${textValue}`, true);
+xhttp.setRequestHeader('Authorization', '563492ad6f91700001000001d11166470a7f413a8ec4224ab90a54d8' );
+xhttp.send();
+})
+
+
+
+
+
+</script>
+
+</html>
